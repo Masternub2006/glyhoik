@@ -1,39 +1,4 @@
 {
-  "expo": {
-    "name": "Умный дом",
-    "slug": "smart-home",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./src/assets/logo.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./src/assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#121627"
-    },
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "package": "com.kasper0_0.smarthome",
-      "edgeToEdgeEnabled": true,
-      "adaptiveIcon": {
-        "foregroundImage": "./src/assets/adaptive.png",
-        "backgroundColor": "#121627"
-      }
-    },
-    "web": {
-      "favicon": "./src/assets/favicon.png"
-    },
-    "owner": "kasper0_0",
-    "plugins": [
-      "expo-sqlite"
-    ],
-    "extra": {
-      "eas": {
-        "projectId": "02dd8f00-1c2a-456c-90d9-400863dec401"
-      }
-    }
-  }
+  "name": "SmartHome",
+  "displayName": "Умный дом"
 }
