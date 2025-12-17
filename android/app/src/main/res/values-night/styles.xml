@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style name="SplashTheme" parent="Theme.Material3.DayNight.NoActionBar">
+    <item name="android:windowSplashScreenBackground">#121627</item>
+    <item name="android:windowSplashScreenAnimatedIcon">@drawable/splash</item>
+    <item name="android:windowSplashScreenAnimationDuration">200</item>
+</style>

@@ -3,7 +3,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HistoryScreen from '../screens/history/HistoryScreen';
 import SettingsScreen from '../screens/settings/SettingsScreen';
 import BellIcon from '../components/icons/BellIcon';
-import * as Haptics from 'expo-haptics';
+//import * as Haptics from 'expo-haptics';
+import ReactNativeHapticFeedback from "react-native-haptic-feedback"
 import SettingsIcon from '../components/icons/SettingsIcon';
 import { Platform } from 'react-native';
 
@@ -15,7 +16,12 @@ export default function BottomTabs() {
         screenOptions={({ route }) => ({
         headerTitleAlign: 'center',
         tabBarIcon: ({ focused, color }) => {
-            Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light)
+            //Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light)
+            ReactNativeHapticFeedback.trigger("impactLight",
+            {
+              enableVibrateFallback: false,
+              ignoreAndroidSystemSettings: false,
+            });
             if (route.name === 'Уведомления') {
               return <BellIcon active={focused} color={color} />;
             } else if (route.name === 'Настройки') {

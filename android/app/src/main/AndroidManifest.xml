@@ -57,7 +57,7 @@
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|uiMode"
             android:launchMode="singleTask"
             android:windowSoftInputMode="adjustResize"
-            android:theme="@style/AppTheme"
+            android:theme="@style/SplashTheme"
             android:exported="true"
             android:screenOrientation="portrait"
             android:hardwareAccelerated="true"
